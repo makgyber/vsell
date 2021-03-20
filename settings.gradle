@@ -1,2 +1,2 @@
-rootProject.name='VBuys'
+rootProject.name='VSells'
 include ':app'
