@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Village Buys</string>
+    <string name="search_hint">product or service</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Store Setup</string>
+    <string name="mystore">My Store</string>
+    <string name="profile">Profile</string>
+    <string name="messages">Messages</string>
+    <string name="notifications">Notifications</string>
+    <string name="inventory">Inventory</string>
+    <string name="features">Features</string>
+    <string name="feedback">Feedback</string>
+    <string name="search_title">Search</string>
+    <string name="save">Save</string>
+    <string name="refresh">Refresh</string>
+    <string name="home">Home</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="tindahan_welcome">
+    <![CDATA[
+        <h1>Welcome!</h1>
+        If you are interested in selling products in our marketplace, you need to register
+        store details first.
+    ]]>
+    </string>
+
+    <string name="tindahan_name_help">
+    What is the name of your store?
+    </string>
+    <string name="tindahan_name_hint">My Food Store</string>
+    <string name="tindahan_address_help">
+        Where is your place of business located?
+    </string>
+    <string name="tindahan_address_hint">No. 1 Rizal St., Pasig</string>
+    <string name="tindahan_contact_info_help">
+    <![CDATA[
+        <h5>How do you want to be contacted? </h5>
+        Please include all mobile numbers, landline,
+        and email address separated by a comma.
+    ]]>
+    </string>
+    <string name="tindahan_contact_info_hint">0999-123-1234, 8877-0000,  mfs@email.com</string>
+
+    <string name="tindahan_service_area_help">
+        Caloocan, Malabon, Navotas, Valenzuela, Quezon City, Marikina, Pasig, Taguig,
+        Makati, Manila, Mandaluyong, San Juan, Pasay, Parañaque, Las Piñas, and Muntinlupa
+    </string>
+    <string name="tindahan_service_area_hint">Makati, Pasay, Manila</string>
+
+    <string name="title_activity_maps">Current Place Details</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="option_get_place">Get place</string>
+    <string name="pick_place">Choose a place</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="google_maps_key">AIzaSyCwt5frgNx07Pj47KTHvlB0vG-_wpJM_qY</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/ic_store_white_24dp"
+        android:gravity="bottom|left"
+        />
+    <item
+        android:drawable="@drawable/ic_add_white_24dp"
+        android:height="7dp"
+        android:width="7dp"
+        android:gravity="top|right"
+        />
+</layer-list>

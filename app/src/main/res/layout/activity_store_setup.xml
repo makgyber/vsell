@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".activities.StoreSetupActivity">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage Your Store Profile"
+                android:layout_marginBottom="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Switch
+                android:layout_below="@+id/tv_header"
+                android:id="@+id/s_feature_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Publish me" />
+
+            <TextView
+                android:layout_below="@+id/s_feature_me"
+                android:id="@+id/tv_name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Store Name" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_below="@+id/tv_name_label"
+                android:id="@+id/txt_tindahan_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="My Food Store"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_below="@+id/txt_tindahan_name"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:id="@+id/tv_address_label"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_below="@+id/tv_address_label"
+                android:id="@+id/txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Makati, MM"
+                android:clickable="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_below="@+id/txt_address"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Information"
+                android:id="@+id/tv_contact_info_label"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_below="@+id/tv_contact_info_label"
+                android:id="@+id/txt_contact_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="mystore@gmail.com, 09991234567, 88771234"
+                android:singleLine="false" />
+
+
+            <TextView
+                android:layout_below="@+id/txt_contact_info"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Options"
+                android:id="@+id/tv_delivery_options"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_below="@+id/tv_delivery_options"
+                android:id="@+id/txt_delivery_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Store Pickup, Lalamove, Grab, Speedy"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_below="@+id/txt_delivery_mode"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Options"
+                android:id="@+id/tv_payment_options"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_below="@+id/tv_payment_options"
+                android:id="@+id/txt_payment_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bank Statement, GCash, COD"
+                android:singleLine="false" />
+
+            <TextView
+                android:layout_below="@+id/txt_payment_options"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logo"
+                android:id="@+id/tv_logo"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_below="@+id/tv_logo"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_store_logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_store_mall_directory_pink_24dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF99FFCC"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MessageActivity">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_messages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_weight="2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:layout_below="@+id/rv_messages"
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#00BCD4"
+            />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:background="@android:color/transparent"
+            android:hint="Enter message"
+            android:maxLines="10"
+            android:lineHeight="24dp"
+            android:lines="4"/>
+
+
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/button_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_photo_reddish_24dp" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/button_chatbox_send"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:backgroundTint="@color/fui_transparent"
+            android:src="@drawable/ic_send_reddish_24dp" />
+
+    </LinearLayout>
+</LinearLayout>

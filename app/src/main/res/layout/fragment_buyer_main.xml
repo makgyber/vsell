@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.BuyerMainFragment">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fl_main"
+                android:layout_above="@+id/bnv_main">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:paddingVertical="4dp"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_my_location">
+                    <TextView
+                        android:id="@+id/text_view_welcome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingVertical="4dp"
+                        android:text="Click to set location"
+                        android:textAlignment="center"
+                        android:drawableRight="@drawable/ic_place_white_24dp"
+                        android:textColor="@color/white"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_icon_bar"
+                        android:layout_below="@+id/ll_my_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_item"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:nestedScrollingEnabled="true"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_food"
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:drawableTop="@drawable/ic_local_dining_black_24dp"
+                            android:text="Food"
+                            android:padding="4dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textAlignment="center"
+                            android:background="@drawable/rounded_item"
+                            android:clickable="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_services"
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:drawableTop="@drawable/ic_build_black_24dp"
+                            android:text="Services"
+                            android:padding="4dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textAlignment="center"
+                            android:background="@drawable/rounded_item"
+                            android:clickable="true"/>
+
+                        <TextView
+                            android:id="@+id/tv_devices"
+                            android:layout_width="64dp"
+                            android:padding="4dp"
+                            android:layout_height="wrap_content"
+                            android:drawableTop="@drawable/ic_devices_other_black_24dp"
+                            android:text="Devices"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textAlignment="center"
+                            android:background="@drawable/rounded_item"
+                            android:clickable="true"/>
+
+                        <TextView
+                            android:id="@+id/tv_delivery"
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:drawableTop="@drawable/ic_directions_bike_black_48dp"
+                            android:text="Delivery"
+                            android:padding="4dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textAlignment="center"
+                            android:background="@drawable/rounded_item"
+                            android:clickable="true"/>
+
+                    </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_below="@+id/ll_icon_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/tv_store_map"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Placeholder"/>
+
+<!--                        <fragment-->
+<!--                            android:layout_below="@+id/tv_store_map"-->
+<!--                            android:id="@+id/autocomplete_fragment"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"-->
+<!--                            />-->
+<!--                        <fragment-->
+<!--                            android:id="@+id/map"-->
+<!--                            android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_below="@+id/autocomplete_fragment"-->
+<!--                            tools:context=".activities.MapsActivity" />-->
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+</FrameLayout>

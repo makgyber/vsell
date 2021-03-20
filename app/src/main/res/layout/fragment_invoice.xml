@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.InvoiceListFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_item"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:drawableTop="@drawable/ic_shopping_cart_white_24dp"
+        android:textAlignment="center"
+        android:paddingVertical="44dp"
+        android:layout_margin="24dp"
+        android:textColor="@color/gradEnd"
+        android:text="No Orders yet" />
+
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_invoice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+    </RelativeLayout>
+</FrameLayout>
